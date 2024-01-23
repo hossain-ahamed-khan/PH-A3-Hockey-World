@@ -18,6 +18,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 
+    <!-- Font Awesome link  -->
+
+    <script src="https://kit.fontawesome.com/48d86ff5d9.js" crossorigin="anonymous"></script>
+
     <style>
         .font-manrope {
             font-family: 'Manrope', sans-serif;
@@ -40,12 +44,90 @@
 
 </head>
 
-<body class="font-manrope">
+<body class="font-manrope bg-white ">
     <header>
-
+        <!-- navbar section  -->
+        <nav class="container mx-auto">
+            <div class="navbar ">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm text-black dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl">Hockey's</a>
+                </div>
+                <div class="navbar-center text-black hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="hover:text-red-500"><a>Home</a></li>
+                        <li class="hover:text-red-500"><a>About</a></li>
+                        <li class="hover:text-red-500"><a>Pages</a></li>
+                        <li class="hover:text-red-500"><a>Blog</a></li>
+                        <li class="hover:text-red-500"><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <i class="fa-solid fa-magnifying-glass mr-5 cursor-pointer"></i>
+                    <a class="btn bg-red-500 border-none text-white hover:bg-red-600">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
     </header>
-
     <main>
+
+        <!-- hero section  -->
+
+        <section class="container mx-auto lg:relative">
+            <div class="carousel w-full rounded-xl my-8">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="./Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:absolute right-3 bottom-16 text-white bg-slate-900 lg:w-5/12 p-8 rounded-xl lg:mr-5">
+                <h3 class="text-xl font-extrabold mb-4">Meet all the heroes from the field</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores sequi blanditiis porro autem ullam
+                    temporibus.</p>
+            </div>
+        </section>
+
+
 
     </main>
 
